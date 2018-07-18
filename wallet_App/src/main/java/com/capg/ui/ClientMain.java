@@ -74,12 +74,12 @@ public class ClientMain {
 					System.out.println("ENTER VALID LOGIN DETAILS ");
 				}
 			}
-			// break;
+			
 
 		} while (choice != 3);
 	}
 
-	private static boolean useLogin() {
+	        private  static boolean useLogin() {
 		// TODO Auto-generated method stub
 		Scanner sc1 = new Scanner(System.in);
 		PaymentDataValidate validate = new PaymentDataValidate();
@@ -148,9 +148,9 @@ public class ClientMain {
 	private static void withdrawBalance() {
 
 		Scanner sc = new Scanner(System.in);
-		// PaymenDetails details = new PaymenDetails ();
 		PaymentService service = new PaymentService();
 		System.out.println("Enter the amount to withdraw");
+		
 		float amt1 = sc.nextFloat();
 
 		boolean withdraw = service.withdrawBalance(amt1);

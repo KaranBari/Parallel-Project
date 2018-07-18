@@ -2,7 +2,7 @@ package com.capgemini.test;
 
 import junit.framework.TestCase;
 
-public class PaymentDetailsTest extends TestCase {
+public class CustomerDetailsTest extends TestCase {
 
 	public void testGetCustomerName() {
 	      assertEquals("Valid","Karan","Karan");
@@ -43,9 +43,7 @@ public class PaymentDetailsTest extends TestCase {
 
 	}
 
-	public void testGetInitialBal() {
-		
-	}
+	
 
 	public void testGetAadharNo() {
 		assertEquals(1234567890, 1234567890);
@@ -54,10 +52,7 @@ public class PaymentDetailsTest extends TestCase {
 		assertNotSame(1234567890, 45345);
 	}
 
-	public void testGetCustAccNo() {
-		assertNotSame(1234567890, " ");
-	}
-
+	
 	public void testGetCustEmail() {
 		assertEquals("abc@gmail.com", "abc@gmail.com");
 		assertNotSame("abc@gmail.com", " ");
@@ -66,8 +61,5 @@ public class PaymentDetailsTest extends TestCase {
 	}
 	
 
-	public void testGetCustAccDate() {
-		
-	}
-
+	
 }

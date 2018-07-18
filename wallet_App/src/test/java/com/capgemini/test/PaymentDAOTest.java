@@ -11,7 +11,7 @@ public class PaymentDAOTest extends TestCase {
 	CustomerDetails detail = new CustomerDetails();
 	PaymentDAO dao = new PaymentDAO();
 	public void testAddCustomer() {
-		//assertEquals(1,dao.addCustomer(detail));
+		
 	}
 
 	public void testShowBalance() {
