@@ -163,12 +163,6 @@ public class PaymentDAO implements IPaymentDAO {
 			System.out.println(loginQuery);
 			ResultSet rs = pstmt.executeQuery(loginQuery);
 			while (rs.first()) {
-				/*
-				 * String s = "select * from account WHERE AadharNo='" + rs.getString(1) + "'";
-				 * PreparedStatement pstmt1 = con.prepareStatement(s); rs1 =
-				 * pstmt1.executeQuery();
-				 * 
-				 */
 				aadharNumber = rs.getString("aadharNo");
 				return true;
 			}
